@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="fr">
+<title>Nothing.</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" type="image/png" href="/assets/favicon.png" />
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+  body {
+    font-family: "Lato", sans-serif
+  }
+
+  .mySlides {
+    display: none
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+</style>
+
+<body>
+
+  <!-- Navbar -->
+  <div class="w3-top">
+    <div class="w3-bar w3-black w3-card">
+      <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)"
+        onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+      <a href="/index.html" class="w3-bar-item w3-button w3-padding-large">ACCUEIL</a>
+      <a href="/index.html#fondamental" class="w3-bar-item w3-button w3-padding-large w3-hide-small">FONDAMENTAL</a>
+      <a href="/index.html#distributions" class="w3-bar-item w3-button w3-padding-large w3-hide-small">DISTRIBUTIONS</a>
+
+      <div class="w3-dropdown-hover w3-hide-small">
+        <button class="w3-padding-large w3-button" title="More">PROCÉDURES <i class="fa fa-caret-down"></i></button>
+        <div class="w3-dropdown-content w3-bar-block w3-card-4">
+          <a href="/menu/informationgathering.html" class="w3-bar-item w3-button">01 - Information Gathering</a>
+          <a href="/menu/vulnerabilityanalysis.html" class="w3-bar-item w3-button">02 - Vulnerability Analysis</a>
+          <a href="/menu/webapplicationanalysis.html" class="w3-bar-item w3-button">03 - Web Application Analysis</a>
+          <a href="/menu/databaseassessment.html" class="w3-bar-item w3-button">04 - Database Assessment</a>
+          <a href="/menu/passwordattacks.html" class="w3-bar-item w3-button">05 - Password Attacks</a>
+          <a href="/menu/wirelessattacks.html" class="w3-bar-item w3-button">06 - Wireless Attacks</a>
+          <a href="/menu/reverseengineering.html" class="w3-bar-item w3-button">07 - Reverse Engineering</a>
+          <a href="/menu/exploitationtools.html" class="w3-bar-item w3-button">08 - Exploitation Tools</a>
+          <a href="/menu/sniffingspoofing.html" class="w3-bar-item w3-button">09 - Sniffing & Spoofing</a>
+          <a href="/menu/postexploitation.html" class="w3-bar-item w3-button">10 - Post Exploitation</a>
+          <a href="/menu/forensics.html" class="w3-bar-item w3-button">11 - Forensics</a>
+          <a href="/menu/reportingtools.html" class="w3-bar-item w3-button">12 - Reporting Tools</a>
+          <a href="/menu/socialengineeringtools.html" class="w3-bar-item w3-button">13 - Social Engineering Tools</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--fin de la navbar-->
+
+  <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+  <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+    <a href="/menu/informationgathering.html" class="w3-bar-item w3-button">01 - Information Gathering</a>
+    <a href="/menu/vulnerabilityanalysis.html" class="w3-bar-item w3-button">02 - Vulnerability Analysis</a>
+    <a href="/menu/webapplicationanalysis.html" class="w3-bar-item w3-button">03 - Web Application Analysis</a>
+    <a href="/menu/databaseassessment.html" class="w3-bar-item w3-button">04 - Database Assessment</a>
+    <a href="/menu/passwordattacks.html" class="w3-bar-item w3-button">05 - Password Attacks</a>
+    <a href="/menu/wirelessattacks.html" class="w3-bar-item w3-button">06 - Wireless Attacks</a>
+    <a href="/menu/reverseengineering.html" class="w3-bar-item w3-button">07 - Reverse Engineering</a>
+    <a href="/menu/exploitationtools.html" class="w3-bar-item w3-button">08 - Exploitation Tools</a>
+    <a href="/menu/sniffingspoofing.html" class="w3-bar-item w3-button">09 - Sniffing & Spoofing</a>
+    <a href="/menu/postexploitation.html" class="w3-bar-item w3-button">10 - Post Exploitation</a>
+    <a href="/menu/forensics.html" class="w3-bar-item w3-button">11 - Forensics</a>
+    <a href="/menu/reportingtools.html" class="w3-bar-item w3-button">12 - Reporting Tools</a>
+    <a href="/menu/socialengineeringtools.html" class="w3-bar-item w3-button">13 - Social Engineering Tools</a>
+  </div>
+  <!--fin de la navbar tel-->
+
+  <div class="mySlides w3-display-container w3-center" id="accueil">
+    <img src="/assets/man-in-the-middle-attack.svg" style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h3>Man in the Middle Attack</h3>
+      <p><b>Parce que rien de ce que vous faites n'est caché...</b></p>
+    </div>
+  </div>
+  <br><br><br>
+
+  <h1>Logiciels Utiles</h1>
+  <style>
+    h1 {
+      text-align: center;
+    }
+  </style>
+  <main id="listapps">
+    <ol class="gradient-list">
+      <li>Ettercap-Graphical</li>
+      <p>For Debian : <code>sudo apt install ettercap-graphical</code></p>
+      <p>For Arch : <code>sudo pacman -S ettercap-gtk</code></p>
+      <br>
+      <li>ettercap-text-only</li>
+      <p>For Debian : <code>sudo apt install ettercap-text-only</code></p>
+      <p>For Arch : <code>sudo pacman -S ettercap-text-only</code></p>
+      <br>
+      <li>Bettercap</li>
+      <p>For Debian : <code>sudo apt install bettercap</code></p>
+      <p>For Arch : <code>sudo pacman -S bettercap</code></p>
+      <br>
+    </ol>
+  </main>
+
+  <h2><u>Procédures :</u></h2>
+  <h3><strong>Pour Ettercap-Graphical</strong></h3>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <style>
+    @import url(https://fonts.googleapis.com/css?family=Montserrat:900|Raleway:400,400i,700,700i);
+
+    /*** FONTS ***/
+    /*** VARIABLES ***/
+    /* Colors */
+    /*** EXTEND ***/
+    /* box-shadow */
+    code {
+      background-color: #eee;
+      border-radius: 3px;
+      font-family: courier, monospace;
+      padding: 0 3px;
+    }
+
+    #listapps {
+      text-align: center;
+    }
+
+    h2 {
+      text-align: center;
+    }
+
+    ol.gradient-list>li,
+    ol.gradient-list>li::before {
+      box-shadow: 0.25rem 0.25rem 0.6rem rgba(0, 0, 0, 0.05), 0 0.5rem 1.125rem rgba(75, 0, 0, 0.05);
+    }
+
+    /*** STYLE ***/
+    *,
+    *:before,
+    *:after {
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: #fafafa;
+      color: #1d1f20;
+      font-family: 'Raleway', sans-serif;
+    }
+
+    main {
+      display: block;
+      margin: 0 auto;
+      max-width: 40rem;
+      padding: 1rem;
+    }
+
+    ol.gradient-list {
+      counter-reset: gradient-counter;
+      list-style: none;
+      margin: 1.75rem 0;
+      padding-left: 1rem;
+    }
+
+    ol.gradient-list>li {
+      background: white;
+      border-radius: 0 0.5rem 0.5rem 0.5rem;
+      counter-increment: gradient-counter;
+      margin-top: 1rem;
+      min-height: 3rem;
+      padding: 1rem 1rem 1rem 3rem;
+      position: relative;
+    }
+
+    ol.gradient-list>li::before,
+    ol.gradient-list>li::after {
+      background: linear-gradient(135deg, #83e4e2 0%, #a2ed56 100%);
+      border-radius: 1rem 1rem 0 1rem;
+      content: '';
+      height: 3rem;
+      left: -1rem;
+      overflow: hidden;
+      position: absolute;
+      top: -1rem;
+      width: 3rem;
+    }
+
+    ol.gradient-list>li::before {
+      align-items: flex-end;
+      content: counter(gradient-counter);
+      color: #1d1f20;
+      display: flex;
+      font: 900 1.5em/1 'Montserrat';
+      justify-content: flex-end;
+      padding: 0.125em 0.25em;
+      z-index: 1;
+    }
+
+    ol.gradient-list>li:nth-child(10n+1):before {
+      background: linear-gradient(135deg, rgba(37, 0, 250, 0.4) 0%, rgba(37, 0, 250, 0.4) 100%);
+    }
+
+    ol.gradient-list>li:nth-child(10n+2):before {
+      background: linear-gradient(135deg, rgba(37, 0, 250, 0.4) 0%, rgba(37, 0, 250, 0.4) 100%);
+    }
+
+    ol.gradient-list>li:nth-child(10n+3):before {
+      background: linear-gradient(135deg, rgba(37, 0, 250, 0.4) 0%, rgba(37, 0, 250, 0.4) 100%);
+    }
+
+    ol.gradient-list>li:nth-child(10n+4):before {
+      background: linear-gradient(135deg, rgba(33, 48, 134, 0.8) 0%, rgba(33, 48, 134, 0.8) 100%);
+    }
+
+    ol.gradient-list>li:nth-child(10n+5):before {
+      background: linear-gradient(135deg, rgba(37, 0, 250, 0.4) 0%, rgba(37, 0, 250, 0.4) 100%);
+    }
+
+    ol.gradient-list>li:nth-child(10n+6):before {
+      background: linear-gradient(135deg, rgba(37, 0, 250, 0.4) 0%, rgba(37, 0, 250, 0.4) 100%);
+    }
+
+    ol.gradient-list>li:nth-child(10n+7):before {
+      background: linear-gradient(135deg, rgba(37, 0, 250, 0.4) 0%, rgba(37, 0, 250, 0.4) 100%);
+    }
+
+    ol.gradient-list>li:nth-child(10n+8):before {
+      background: linear-gradient(135deg, rgba(37, 0, 250, 0.4) 0%, rgba(37, 0, 250, 0.4) 100%);
+    }
+
+    ol.gradient-list>li:nth-child(10n+9):before {
+      background: linear-gradient(135deg, rgba(37, 0, 250, 0.4) 0%, rgba(37, 0, 250, 0.4) 100%);
+    }
+
+    ol.gradient-list>li:nth-child(10n+10):before {
+      background: linear-gradient(135deg, rgba(37, 0, 250, 0.4) 0%, rgba(37, 0, 250, 0.4) 100%);
+    }
+
+    ol.gradient-list>li+li {
+      margin-top: 2rem;
+    }
+  </style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+    <a href="https://www.github.com/lecoqhardi" target="_blank"><i class="fa fa-github w3-hover-opacity"></i></a>
+    <a href="https://twitter.com/LeCoqHardi__" target="_blank"><i class="fa fa-twitter w3-hover-opacity"></i></a>
+    <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+  </footer>
+
+  <!--script js-->
+  <script>
+    // Automatic Slideshow - change image every 4 seconds
+    var myIndex = 0;
+    carousel();
+
+    function carousel() {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      myIndex++;
+      if (myIndex > x.length) { myIndex = 1 }
+      x[myIndex - 1].style.display = "block";
+      setTimeout(carousel, 4000);
+    }
+
+    // Used to toggle the menu on small screens when clicking on the menu button
+    function myFunction() {
+      var x = document.getElementById("navDemo");
+      if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+      } else {
+        x.className = x.className.replace(" w3-show", "");
+      }
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    var modal = document.getElementById('ticketModal');
+    window.onclick = function (event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+  </script>
+  <!--fin du js-->
+</body>
+
+</html>
